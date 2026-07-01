@@ -1,4 +1,4 @@
-# Predicting Heart Disease using Machine Learning
+# Heart Disease Detection
 
 An end-to-end machine learning **proof of concept** that predicts whether or not a
 patient has heart disease based on their clinical parameters.
