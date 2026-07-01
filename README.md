@@ -1,6 +1,6 @@
 # Heart Disease Detection
 
-An end-to-end machine learning **proof of concept** that predicts whether or not a
+A **production** end-to-end machine learning system that predicts whether or not a
 patient has heart disease based on their clinical parameters.
 
 > *Given clinical parameters about a patient, can we predict whether or not they have heart disease?*
@@ -22,16 +22,16 @@ heart-disease-detection/
 │   └── sklearn-ml-map-cheatsheet-heart-disease-ensemble.png
 └── notebooks/
     ├── end-to-end-heart-disease-classification.ipynb        # main (detailed) notebook
-    ├── end-to-end-heart-disease-classification-video.ipynb  # video walkthrough version
+    ├── end-to-end-heart-disease-classification-video.ipynb  # condensed walkthrough version
     └── heart-disease.csv        # dataset copy (video notebook loads it same-dir)
 ```
 
-Both notebooks are included unmodified:
+Two notebook variants are included:
 
 - **`end-to-end-heart-disease-classification.ipynb`** — the full, detailed notebook
   with expanded explanations, EDA, evaluation and hyperparameter tuning.
-- **`end-to-end-heart-disease-classification-video.ipynb`** — the version that follows
-  along with the course video.
+- **`end-to-end-heart-disease-classification-video.ipynb`** — a condensed, streamlined
+  walkthrough covering the same workflow.
 
 The dataset ships in two locations so each notebook runs as-is: `data/heart-disease.csv`
 for the main notebook (`../data/heart-disease.csv`) and `notebooks/heart-disease.csv`
@@ -92,7 +92,7 @@ dependency management.
    `.venv` interpreter as the kernel when prompted:
 
    - `notebooks/end-to-end-heart-disease-classification.ipynb` (detailed)
-   - `notebooks/end-to-end-heart-disease-classification-video.ipynb` (video walkthrough)
+   - `notebooks/end-to-end-heart-disease-classification-video.ipynb` (condensed walkthrough)
 
    Then run the cells top to bottom. (`ipykernel` is included in the dependencies
    so the editor can run the notebooks directly.)
