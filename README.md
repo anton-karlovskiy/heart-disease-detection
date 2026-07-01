@@ -14,7 +14,7 @@ disease (`1`) or no heart disease (`0`).
 ```
 heart-disease-detection/
 ├── README.md
-├── requirements.txt
+├── pyproject.toml
 ├── data/
 │   └── heart-disease.csv        # dataset (used by the main notebook via ../data/)
 ├── images/                      # figures referenced by the main notebook
@@ -76,19 +76,23 @@ definition, data, evaluation, features, modelling, and experimentation. It cover
 
 ## Getting started
 
-1. Create and activate a virtual environment (optional but recommended).
-2. Install the dependencies:
+This project uses [uv](https://docs.astral.sh/uv/) for environment and
+dependency management.
+
+1. Install `uv` if you don't have it (see the [uv install guide](https://docs.astral.sh/uv/getting-started/installation/)).
+2. Sync the environment — this creates a `.venv` and installs all dependencies
+   from `pyproject.toml`:
 
    ```bash
-   pip install -r requirements.txt
+   uv sync
    ```
 
-3. Launch Jupyter and open a notebook:
+3. Open the project in **VS Code** or **Cursor** (both have built-in Jupyter
+   notebook support), open one of the notebooks in `notebooks/`, and select the
+   `.venv` interpreter as the kernel when prompted:
 
-   ```bash
-   jupyter notebook
-   ```
+   - `notebooks/end-to-end-heart-disease-classification.ipynb` (detailed)
+   - `notebooks/end-to-end-heart-disease-classification-video.ipynb` (video walkthrough)
 
-   Open `notebooks/end-to-end-heart-disease-classification.ipynb` (detailed) or
-   `notebooks/end-to-end-heart-disease-classification-video.ipynb` (video walkthrough)
-   and run the cells top to bottom.
+   Then run the cells top to bottom. (`ipykernel` is included in the dependencies
+   so the editor can run the notebooks directly.)

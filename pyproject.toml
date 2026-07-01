@@ -1,0 +1,20 @@
+[project]
+name = "heart-disease-detection"
+version = "0.1.0"
+description = "End-to-end machine learning proof of concept predicting heart disease from patient clinical parameters."
+readme = "README.md"
+requires-python = ">=3.10"
+# Versions pinned to the era the notebooks were written for (scikit-learn 1.2+),
+# to preserve fidelity with the original outputs and APIs.
+dependencies = [
+    "numpy>=1.26,<2",
+    "pandas>=2.0,<2.2",
+    "matplotlib>=3.7,<3.9",
+    "seaborn>=0.12,<0.14",
+    "scikit-learn>=1.2,<1.4",
+    "ipykernel",
+]
+
+# This is a notebook project, not an installable package — uv only manages the environment.
+[tool.uv]
+package = false
