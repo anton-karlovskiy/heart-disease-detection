@@ -92,8 +92,3 @@ definition, data, evaluation, features, modelling, and experimentation. It cover
    Open `notebooks/end-to-end-heart-disease-classification.ipynb` (detailed) or
    `notebooks/end-to-end-heart-disease-classification-video.ipynb` (video walkthrough)
    and run the cells top to bottom.
-
-## Credits
-
-Based on the "Complete A.I. Machine Learning and Data Science: Zero to Mastery"
-course material by [Daniel Bourke](https://github.com/mrdbourke/zero-to-mastery-ml).
